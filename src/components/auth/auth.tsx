@@ -27,6 +27,7 @@ export default function Auth() {
         <input
           {...register("name", { required: true, maxLength: 20 })}
           type="text"
+          autoComplete="off"
           placeholder="Enter your name"
           className={`border-2 rounded-md p-2 mt-3 w-full md:w-[260px] outline-none ${
             errors.name ? "border-red-500" : "border-gray-300"
