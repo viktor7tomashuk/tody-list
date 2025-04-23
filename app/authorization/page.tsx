@@ -1,9 +1,9 @@
-import Header from "@/src/components/header";
+import Auth from "@/src/components/auth/auth";
 
 export default function Authorization() {
   return (
     <div>
-      <Header />
+      <Auth />
     </div>
   );
 }
