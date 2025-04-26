@@ -1,7 +1,9 @@
+import InputForm from "@/src/components/input-form";
+
 export default function Dashboard() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <p className="text-[30px] font-bold font-lora">Dashboard</p>
+    <div className="">
+      <InputForm />
     </div>
   );
 }

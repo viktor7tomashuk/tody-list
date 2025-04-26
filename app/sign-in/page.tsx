@@ -1,9 +1,9 @@
-import Auth from "@/src/components/auth/auth";
+import SignIn from "@/src/components/auth/sing-in";
 
 export default function Authorization() {
   return (
     <div>
-      <Auth />
+      <SignIn />
     </div>
   );
 }
