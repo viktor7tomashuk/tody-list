@@ -3,7 +3,6 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/src/lib/supabase";
 import Link from "next/link";
-import { useEffect } from "react";
 
 interface AuthProps {
   email: string;
