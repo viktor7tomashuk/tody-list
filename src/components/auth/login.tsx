@@ -36,7 +36,7 @@ export default function Login() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col items-center space-y-4"
+      className="flex flex-col items-center space-y-4 mt-[300px]"
     >
       <p className="text-2xl font-bold">Login</p>
 
