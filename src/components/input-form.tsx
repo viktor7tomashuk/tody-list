@@ -49,7 +49,7 @@ export default function InputForm() {
       <div className="mt-10">
         <p className="text-[40px]">keep your plan</p>
       </div>
-      <div className="flex items-center gap-5 mt-5">
+      <div className="grid grid-cols-1 md:flex items-center gap-5 mt-5">
         <input
           {...register("task", { required: true, maxLength: 20 })}
           type="text"
@@ -63,7 +63,7 @@ export default function InputForm() {
           selected={selectedDate}
           onChange={date => setSelectedDate(date)}
           dateFormat="yyyy-MM-dd"
-          className="border-2 rounded-md p-2 mt-3 outline-none w-[150px]"
+          className="border-2 rounded-md p-2 mt-3 outline-none w-full md:w-[150px]"
           popperPlacement="bottom"
           withPortal
         />
@@ -75,13 +75,13 @@ export default function InputForm() {
           timeIntervals={15}
           timeCaption="Time"
           dateFormat="HH:mm"
-          className="border-2 rounded-md p-2 mt-3 outline-none w-[100px]"
+          className="border-2 rounded-md p-2 mt-3 outline-none w-full md:w-[100px]"
           withPortal
         />
 
         <button
           type="submit"
-          className="border px-2 py-2 mt-3 w-[100px] rounded-[2px] hover:ml- cursor-pointer"
+          className="border px-2 py-2 mt-3 w-full md:w-[100px] rounded-[2px] hover:ml- cursor-pointer"
         >
           add
         </button>
